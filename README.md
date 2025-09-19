@@ -1,96 +1,97 @@
-# Online Banking System V2.0.2
+🏦 Online Banking System
 
 This is an Online Banking Concept created using Django Web Framework.
 
+✨ Features
 
-## Features
+✅ Create Bank Account
 
-* Create Bank Account.
-* Deposit & Withdraw Money
-* Bank Account Type Support (e.g. Current Account, Savings Account)
-* Interest calculation depending on the Bank Account type
-* Transaction report with a date range filter 
-* See balance after every transaction in the Transaction Report
-* Calculate Monthly Interest Using Celery Scheduled tasks
-* More efficient and accurate interest calculation and balance update
-* Ability to add Minimum and Maximum Transaction amount restriction
-* Modern UI with Tailwind CSS
+✅ Deposit & Withdraw Money
+
+✅ Support for Account Types (Savings, Current, etc.)
+
+✅ Automatic Interest Calculation (per account type)
+
+✅ Transaction Report with Date Filter
+
+✅ Balance Tracking after Every Transaction
+
+✅ Scheduled Interest Calculation using Celery
+
+✅ Min/Max Transaction Limit Restrictions
+
+✅ Modern UI with Tailwind CSS
+
+🛠️ Tech Stack
+
+Backend: Django (Python)
+
+Frontend: HTML, CSS, TailwindCSS
+
+Task Queue: Celery
+
+Database: SQLite (default, can use PostgreSQL/MySQL)
+
+Cache & Queue Broker: Redis
+
+📋 Prerequisites
+
+Make sure you have installed:
+
+Python >= 3.7
+
+Redis Server
+
+Git
+
+pip
+
+Virtualenv (virtualenvwrapper is recommended)
 
 
-## Prerequisites
+⚙️ Installatio
 
-Be sure you have the following installed on your development machine:
+Create & activate a virtual environment:
 
-+ Python >= 3.7
-+ Redis Server
-+ Git
-+ pip
-+ Virtualenv (virtualenvwrapper is recommended)
+python -m venv venv
+# Activate (Windows)
+venv\Scripts\activate
+# Activate (Linux/Mac)
+source venv/bin/activate
 
-## Requirements
 
-+ celery==4.4.7
-+ Django==3.2
-+ django-celery-beat==2.0.0
-+ python-dateutil==2.8.1
-+ redis==3.5.3
+Install dependencies:
 
-## Install Redis Server
-
-[Redis Quick Start](https://redis.io/topics/quickstart)
-
-Run Redis server
-```bash
-redis-server
-```
-
-## Project Installation
-
-To setup a local development environment:
-
-Create a virtual environment in which to install Python pip packages. With [virtualenv](https://pypi.python.org/pypi/virtualenv),
-```bash
-virtualenv venv            # create a virtualenv
-source venv/bin/activate   # activate the Python virtualenv 
-```
-
-or with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/),
-```bash
-mkvirtualenv -p python3 {{project_name}}   # create and activate environment
-workon {{project_name}}   # reactivate existing environment
-```
-
-Clone GitHub Project,
-```bash
-git@github.com:saadmk11/banking-system.git
-
-cd banking-system
-```
-
-Install development dependencies,
-```bash
 pip install -r requirements.txt
-```
 
-Migrate Database,
-```bash
+
+Apply migrations:
+
 python manage.py migrate
-```
 
-Run the web application locally,
-```bash
-python manage.py runserver # 127.0.0.1:8000
-```
 
-Create Superuser,
-```bash
+Create an admin (superuser):
+
 python manage.py createsuperuser
-```
 
-Run Celery
-(Different Terminal Window with Virtual Environment Activated)
-```bash
+
+Run the development server:
+
+python manage.py runserver
+
+
+Start Celery in a new terminal:
+
 celery -A banking_system worker -l info
-
 celery -A banking_system beat -l info
-```
+
+🚀 Usage
+
+Access the app at: http://127.0.0.1:8000
+
+Login as superuser to manage accounts.
+
+Create accounts, deposit/withdraw money, view reports.
+
+Interest is auto-calculated via Celery.
+
