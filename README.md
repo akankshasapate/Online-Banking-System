@@ -5,8 +5,11 @@ This is an Online Banking Concept created using Django Web Framework.
 ✨ Features
 
 ✅ Create Bank Account
+
 ✅ Deposit & Withdraw Money
+
 ✅ Support for Account Types (Savings, Current, etc.)
+
 ✅ Automatic Interest Calculation (per account type)
 ✅ Transaction Report with Date Filter
 ✅ Balance Tracking after Every Transaction
@@ -73,6 +76,7 @@ Access the app at: http://127.0.0.1:8000
 Login as superuser to manage accounts.
 Create accounts, deposit/withdraw money, view reports.
 Interest is auto-calculated via Celery.
+
 
 
 
