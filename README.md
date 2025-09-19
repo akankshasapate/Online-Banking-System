@@ -52,10 +52,11 @@ Virtualenv (virtualenvwrapper is recommended)
 ⚙️ Installatio
 
 Create & activate a virtual environment:
-'''bash 
+```bash 
 python -m venv venv
-'''
+```
 # Activate (Windows)
+
 venv\Scripts\activate
 # Activate (Linux/Mac)
 source venv/bin/activate
@@ -95,5 +96,6 @@ Login as superuser to manage accounts.
 Create accounts, deposit/withdraw money, view reports.
 
 Interest is auto-calculated via Celery.
+
 
 
