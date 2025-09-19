@@ -24,29 +24,26 @@ This is an Online Banking Concept created using Django Web Framework.
 
 ## 🛠️ Tech Stack
 
-Backend: Django (Python)
+- Backend: Django (Python)
 
-Frontend: HTML, CSS, TailwindCSS
+- Frontend: HTML, CSS, TailwindCSS
 
-Task Queue: Celery
+- Database: SQLite (default, can use PostgreSQL/MySQL)
 
-Database: SQLite (default, can use PostgreSQL/MySQL)
-
-Cache & Queue Broker: Redis
 
 ## 📋 Prerequisites
 
 #### Make sure you have installed:
 
-Python >= 3.7
+- Python >= 3.7
 
-Redis Server
+- Redis Server
 
-Git
+- Git
 
-pip
+- pip
 
-Virtualenv (virtualenvwrapper is recommended)
+- Virtualenv (virtualenvwrapper is recommended)
 
 
 ## ⚙️ Installation
@@ -89,6 +86,7 @@ python manage.py runserver
 - Login as superuser to manage accounts.
 
 - Create accounts, deposit/withdraw money, view reports.
+
 
 
 
